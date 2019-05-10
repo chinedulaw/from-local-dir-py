@@ -1,3 +1,4 @@
+The following depencies is needed for the program 
 idx2numpy
 pickle
 numpy

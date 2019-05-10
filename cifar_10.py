@@ -10,7 +10,6 @@ Project Description:
 import pickle
 import numpy as np
 
-cifar_dir=r'C:\Users\Chinedu\Desktop\mnist\cifar-10-batches-py'
 """
 please note the cifar_dir containes the decompressed 
 cifar-10 files in batches,i.e. 
@@ -24,7 +23,7 @@ def unpickle(file):
         data=pickle.load(fileobject,encoding='bytes')
         return data
     
-def load_cifar_10_py(cifardir):
+def load_cifar_10_py(cifar_dir):
     
     print('Extracting cifar-10-py .............')
     batches_meta_dict=unpickle(cifar_dir+'\\batches.meta')
